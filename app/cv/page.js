@@ -3,13 +3,9 @@ export default function CVPage() {
   const ExperienceBlock = ({ period, title, institution, location, children }) => (
     <div className="relative pl-6 border-l-2 border-gray-200 py-2">
       <div className="absolute -left-[5px] top-4 w-2.5 h-2.5 bg-blue-500 rounded-full"></div>
-      {/* CHANGED: Increased contrast for the date */}
       <p className="text-sm text-gray-700">{period}</p>
-      {/* CHANGED: Made the job title nearly black for high contrast */}
       <h3 className="text-lg font-bold text-gray-900 mt-0.5">{title}</h3>
-      {/* CHANGED: Increased contrast for the institution name */}
       <p className="text-md text-gray-800">{institution}, {location}</p>
-      {/* CHANGED: Increased contrast for the bullet points */}
       <ul className="list-disc list-inside mt-3 text-gray-700 text-sm space-y-1">
         {children}
       </ul>
@@ -21,8 +17,8 @@ export default function CVPage() {
       
       <header className="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 border-b">
         <div>
-          <h1 className="text-4xl font-extrabold text-gray-800">Ruzal Sitdikov</h1>
-          <p className="mt-2 text-xl text-blue-600">PhD Chemist | Biobased Materials, Organic Synthesis</p>
+          <h1 className="text-4xl font-extrabold">Ruzal Sitdikov</h1>
+          <p className="mt-2 text-xl text-blue-600">PhD Chemist | Biobased Materials, Organic Synthesis, Green Chemistry</p>
         </div>
         <div className="mt-4 sm:mt-0 text-left sm:text-right text-sm text-gray-700 space-y-1">
           <p>Uppsala, Sweden</p>
@@ -37,29 +33,31 @@ export default function CVPage() {
       </div>
 
       <section className="mt-6">
-        <h2 className="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-4">Summary</h2>
-        <p className="text-gray-800 leading-relaxed">
-          Research Chemist with 10+ years of international experience in organic synthesis, methodology development, and material characterization, with a strong interest in green chemistry and sustainable materials. Expertise in modifying carbohydrates and developing functional materials using techniques including click chemistry and organocatalysis-relevant transformations. Proven ability in optimizing synthetic processes, scaling considerations, and comprehensive analytical characterization. Fluent in English; Proficient in Swedish (B1-B2).
-        </p>
+        <h2 className="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-4">About Me</h2>
+        <div className="space-y-4 text-gray-800 leading-relaxed">
+            <p>
+                Welcome to my corner of the web! I'm a chemist with a passion for building a more sustainable future, one molecule at a time. My work focuses on green chemistry and biobased materials, where I design and synthesize novel molecules from renewable resources like carbohydrates.
+            </p>
+        </div>
       </section>
 
       <section className="mt-8">
         <h2 className="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-4">Core Competencies</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
           <div>
-            <h3 className="font-semibold text-gray-800">Green & Biobased Chemistry</h3>
+            <h3 className="font-semibold">Green & Biobased Chemistry</h3>
             <p className="text-sm text-gray-700">Carbohydrate Modification, Oligomer Synthesis, Click Chemistry, Catalysis, Sustainable Synthesis, Process Optimization</p>
           </div>
           <div>
-            <h3 className="font-semibold text-gray-800">Material Synthesis & Analysis</h3>
+            <h3 className="font-semibold">Material Synthesis & Analysis</h3>
             <p className="text-sm text-gray-700">Organic Synthesis, Methodology Development (Electro/Photo-chemistry), Isotopic Labeling, Purification, Scale-up</p>
           </div>
           <div>
-            <h3 className="font-semibold text-gray-800">Characterization</h3>
+            <h3 className="font-semibold">Characterization</h3>
             <p className="text-sm text-gray-700">NMR (1D/2D), MS (GC-MS, LC-MS, HRMS), HPLC, GC, FT-IR, UV-Vis, DLS, Microscopy</p>
           </div>
           <div>
-            <h3 className="font-semibold text-gray-800">Laboratory & R&D Skills</h3>
+            <h3 className="font-semibold">Laboratory & R&D Skills</h3>
             <p className="text-sm text-gray-700">Experiment Design, Instrument Maintenance, Safety Protocols, Data Analysis, Method Development, Cross-functional Collaboration</p>
           </div>
         </div>
@@ -95,7 +93,6 @@ export default function CVPage() {
             location="Saudi Arabia"
           >
             <li>Developed Ni-catalyzed electrochemical protocols for sustainable synthesis, including C-H deuteration and reductive cross-electrophile coupling, minimizing the use of chemical reagents.</li>
-            {/* CHANGED: Correctly formatted the chemical formula using HTML tags. */}
             <li>Created electrochemical methods for late-stage isotopic labeling (<sup>13</sup>CD<sub>3</sub>), a key technique for mechanistic studies and tracer analysis in environmental chemistry.</li>
           </ExperienceBlock>
 
@@ -107,56 +104,6 @@ export default function CVPage() {
           >
             <li>Synthesized novel mannitol-derived supramolecular organogelators and demonstrated their ability for phase-selective gelation of hydrocarbons from aqueous environments, relevant to oil-spill remediation.</li>
           </ExperienceBlock>
-        </div>
-      </section>
-
-      <section className="mt-8">
-        <h2 className="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-4">Teaching & Supervision</h2>
-        <div className="space-y-6">
-            <ExperienceBlock
-                period="2022"
-                title="Instructor / Training Delivery"
-                institution="KTH Royal Institute of Technology"
-                location="Sweden"
-            >
-                <li>Designed and delivered a graduate-level training course on GC-MS Analytical Chromatography for over 50 PhD students.</li>
-            </ExperienceBlock>
-             <ExperienceBlock
-                period="Sept. 2012 – Jun. 2013"
-                title="Senior Lecturer"
-                institution="Kazan Innovative University (KIU-IEML)"
-                location="Russia"
-            >
-                <li>Taught laboratory and lecture courses in Food Chemistry, General Chemistry, Physical Chemistry, and Analytical Chemistry to undergraduate students.</li>
-            </ExperienceBlock>
-             <ExperienceBlock
-                period="2008 – Present"
-                title="Research Supervisor / Mentor"
-                institution="Various Institutions (UU, KAUST, KU Leuven, KFU)"
-                location="International"
-            >
-                <li>Supervised 8 undergraduate and 1 Master’s research projects to successful completion.</li>
-                <li>Mentored visiting student interns in experimental design, data analysis, and laboratory techniques.</li>
-            </ExperienceBlock>
-             <ExperienceBlock
-                period="Dec 2011 – Jul 2015 (PhD Period)"
-                title="Junior Researcher / Project Engineer"
-                institution="Kazan Federal University (KFU)"
-                location="Russia"
-            >
-                <li>Designed and synthesized thiacalix[4]arene-based receptors and functionalized nanoparticles for the fabrication of electrochemical biosensors.</li>
-                <li>Investigated host-guest interactions and molecular recognition phenomena using UV-Vis and fluorescence spectroscopy.</li>
-            </ExperienceBlock>
-        </div>
-      </section>
-
-      <section className="mt-8">
-        <h2 className="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-4">Education</h2>
-        <div className="py-2">
-          <p className="text-sm text-gray-700">2015</p>
-          <h3 className="text-lg font-semibold text-gray-900">PhD, Organic Chemistry</h3>
-          <p className="text-md text-gray-800">Kazan Federal University, Kazan, Russia</p>
-          <p className="mt-1 text-sm italic text-gray-700">Focus: Synthesis & Properties of Functionalized Supramolecular Systems.</p>
         </div>
       </section>
 
