@@ -36,7 +36,7 @@ export default function CVPage() {
         <h2 className="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-4">About Me</h2>
         <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>
-                Welcome to my corner of the web! I'm a chemist with a passion for building a more sustainable future, one molecule at a time. My work focuses on green chemistry and biobased materials, where I design and synthesize novel molecules from renewable resources like carbohydrates.
+                Welcome to my corner of the web! I&apos;m a chemist with a passion for building a more sustainable future, one molecule at a time. My work focuses on green chemistry and biobased materials, where I design and synthesize novel molecules from renewable resources like carbohydrates.
             </p>
         </div>
       </section>
@@ -82,7 +82,7 @@ export default function CVPage() {
             institution="KTH Royal Institute of Technology (KTH)"
             location="Sweden"
           >
-            <li>Designed and synthesized novel organometallic redox probes (Ru/Os-based) for advanced voltammetric ion-selective electrodes, developing 'early-warning' sensor methodologies for ion detection in aqueous media.</li>
+            <li>Designed and synthesized novel organometallic redox probes (Ru/Os-based) for advanced voltammetric ion-selective electrodes, developing &apos;early-warning&apos; sensor methodologies for ion detection in aqueous media.</li>
             <li>Fabricated and characterized ferrocene-based self-assembled monolayers as redox mediators for electrochemical sensing applications.</li>
           </ExperienceBlock>
 
@@ -107,23 +107,24 @@ export default function CVPage() {
         </div>
       </section>
 
+       {/* --- CORRECTED: Replaced " with &quot; in all publication titles --- */}
        <section className="mt-8">
         <h2 className="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-4">Selected Publications</h2>
         <ul className="space-y-3 text-sm text-gray-800 list-disc list-outside ml-4">
             <li>
-              Fan, Z.; Zamudio, E.; Liu, Y.; Laborda, E.; Tillo, A.; <strong>Sitdikov, R.</strong>; Crespo, G. A.; Cuartero, M. "Adamantane Os(II) dissolved redox probe as an efficient ion-to-electron transducer for voltammetric ionophore-based sensing." <em>Sensors and Actuators B: Chemical</em>, <strong>2025</strong>. <a href="https://doi.org/10.1016/j.snb.2025.138359" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[DOI]</a>
+              Fan, Z.; Zamudio, E.; Liu, Y.; Laborda, E.; Tillo, A.; <strong>Sitdikov, R.</strong>; Crespo, G. A.; Cuartero, M. &quot;Adamantane Os(II) dissolved redox probe as an efficient ion-to-electron transducer for voltammetric ionophore-based sensing.&quot; <em>Sensors and Actuators B: Chemical</em>, <strong>2025</strong>. <a href="https://doi.org/10.1016/j.snb.2025.138359" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[DOI]</a>
             </li>
             <li>
-              Li, N.; <strong>Sitdikov, R.</strong>; Kale, A. P.; Steverlynck, J.; Li, B.; Rueping, M. "A review of recent advances in electrochemical and photoelectrochemical late-stage functionalization..." <em>Beilstein Journal of Organic Chemistry</em>, <strong>2024</strong>. <a href="https://doi.org/10.3762/bjoc.20.214" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[DOI]</a>
+              Li, N.; <strong>Sitdikov, R.</strong>; Kale, A. P.; Steverlynck, J.; Li, B.; Rueping, M. &quot;A review of recent advances in electrochemical and photoelectrochemical late-stage functionalization...&quot; <em>Beilstein Journal of Organic Chemistry</em>, <strong>2024</strong>. <a href="https://doi.org/10.3762/bjoc.20.214" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[DOI]</a>
             </li>
             <li>
-              Steverlynck, J.; <strong>Sitdikov, R.</strong>; Rueping, M.; Nikolaienko, P.; Kale, A. P. "Trideuteromethylation of Alkyl and Aryl Bromides by Nickel-Catalyzed Electrochemical Reductive Cross-Electrophile Coupling." <em>Synlett</em>, <strong>2024</strong>. <a href="https://doi.org/10.1055/s-0042-1751558" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[DOI]</a>
+              Steverlynck, J.; <strong>Sitdikov, R.</strong>; Rueping, M.; Nikolaienko, P.; Kale, A. P. &quot;Trideuteromethylation of Alkyl and Aryl Bromides by Nickel-Catalyzed Electrochemical Reductive Cross-Electrophile Coupling.&quot; <em>Synlett</em>, <strong>2024</strong>. <a href="https://doi.org/10.1055/s-0042-1751558" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[DOI]</a>
             </li>
             <li>
-              Mattsson, I.; Lahtinen, M.; <strong>Sitdikov, R.R.</strong>, et al. "Phase-selective low molecular weight organogelators derived from allylated d-mannose." <em>Carbohydrate Research</em>, <strong>2022</strong>. <a href="https://doi.org/10.1016/j.carres.2022.108596" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[DOI]</a>
+              Mattsson, I.; Lahtinen, M.; <strong>Sitdikov, R.R.</strong>, et al. &quot;Phase-selective low molecular weight organogelators derived from allylated d-mannose.&quot; <em>Carbohydrate Research</em>, <strong>2022</strong>. <a href="https://doi.org/10.1016/j.carres.2022.108596" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[DOI]</a>
             </li>
             <li>
-              Mattsson, I.; <strong>Sitdikov, R.</strong>; Gunell, A.C.M., et al. "Improved synthesis and application of conjugation-amenable polyols from d-mannose." <em>RSC Advances</em>, <strong>2020</strong>. <a href="https://doi.org/10.1039/c9ra10378c" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[DOI]</a>
+              Mattsson, I.; <strong>Sitdikov, R.</strong>; Gunell, A.C.M., et al. &quot;Improved synthesis and application of conjugation-amenable polyols from d-mannose.&quot; <em>RSC Advances</em>, <strong>2020</strong>. <a href="https://doi.org/10.1039/c9ra10378c" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[DOI]</a>
             </li>
         </ul>
         <p className="mt-4 text-sm text-gray-700">
